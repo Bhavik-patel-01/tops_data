@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           .tri{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            /* clip-path: polygon(x y,x y); */
+            clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        }
+
+        .hex{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(138, 212, 18);
+            margin: 20px 0;
+            clip-path: polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            clip-path: polygon(50% 0%,100% 30%,80% 100%,20% 100%,0% 30%);
+        }
+        .main2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            clip-path: polygon(50% 0%,70% 25%,100% 25%,80% 50%,100% 75%,70% 75%,50% 100%,30% 75%,0% 75%,20% 50%,0% 25%, 30% 25%);
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tri"></div>
+    <div class="hex"></div>
+    <div class="main"></div>
+    <div class="main2"></div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .header-container {
+            display: flex;
+            color: #fff;
+        }
+
+        .div-30 {
+            width: 30%;
+            background-color: #10142d;
+            padding: 10px;
+        }
+
+        .div-70 {
+            width: 70%;
+            background-color: #f23b4f;
+            padding: 10px;
+        }
+
+        .sec1 {
+            background-color: #4c86c6;
+            color: #fff;
+            padding: 100px;
+        }
+
+        .sec1 h3 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .sec2-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sec2 .main {
+            background-color: #24344b;
+            color: #fff;
+            width: 50%;
+            align-content: center;
+        }
+
+        .sec2 .sec2-ul {
+            width: 30%;
+            list-style: none;
+            margin: 0;
+        }
+
+        .sec2 ul div {
+            padding: 20px;
+        }
+
+        .sec2 ul div:nth-child(1) {
+            background-color: #c0e3e7;
+        }
+
+        .sec2 ul div:nth-child(2) {
+            background-color: #4ebc97;
+        }
+
+        footer .banner {
+            background-color: #fed269;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width:768px) {
+            .header-container {
+                display: block;
+            }
+
+            .header-container .div-30,
+            .header-container .div-70,
+            .sec1,
+            .sec2 .sec2-ul div,
+            footer .banner {
+                width: auto;
+            }
+
+            .sec2-container {
+                flex-direction: row-reverse;
+            }
+
+            .sec2-container .sec2-ul {
+                padding: 0;
+                display: flex;
+            }
+        }
+
+        @media only screen and (max-width:470px) {
+
+            .sec2 .sec2-container .sec2-ul,
+            .sec2 .main,
+            .sec2 .sec2-container {
+                display: block;
+                width: auto;
+            }
+
+            .sec1,
+            .sec2 .main {
+                padding: 20px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="div-30">HEADER</div>
+            <div class="div-70">MENU</div>
+        </div>
+    </header>
+    <section class="sec1">
+        <h3>HERO</h3>
+    </section>
+    <section class="sec2">
+        <div class="sec2-container">
+            <div class="main">MAIN</div>
+            <ul class="sec2-ul">
+                <div>IMAGE</div>
+                <div>EXTRA</div>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="banner">BANNER</div>
+    </footer>
+</body>
+
+</html>

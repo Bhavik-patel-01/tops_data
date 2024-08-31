@@ -1,0 +1,228 @@
+@media only screen and (max-width:1160px) {
+ 
+    
+}
+@media only screen and (max-width:992px) {
+}
+@media only screen and (max-width:768px){
+    .nav-ul{
+        display: none;
+    }
+    .row .text-logo{
+        font-size: 24px;
+    }
+    .nav .bar-icon{
+        display: block;
+    }
+    .container .button-wrap .btn1{
+        display: none;
+    }
+    .container .button-wrap .btn2{
+       padding: 5px 10px;
+    }
+    .header-text h1{
+        font-size:32px;
+        width: 80%;
+    }
+    .header-text p{
+        width: 100%;
+    }
+    .container .button-wrap2{
+        width: 70%;
+    }
+    .button-wrap2 input{
+        width: 100%;
+        border-radius: 4px;
+    }
+    .button-wrap2 button{
+        width: 100%;
+        position: relative;
+        border-radius: 4px;
+        margin-top:10px; 
+    }
+    .sec1 .sec1-img img{
+        width: 80%;
+    }
+    .sec1 .sec1-text{
+        font-size: 11px;
+    }
+    .sec1 .logo-wrap img{
+        width: 56px;
+    }
+    .sec1 .logo-wrap .slack-logo{
+        display: none;
+    }
+    /* sec2 start */
+    .sec2 .sec2-content{
+        width: 90%;
+    }
+    .sec2 .row{
+        display: block;
+    }
+    .sec2 .sec2-img{
+        width: 100%;
+    }
+    .sec2 .sec2-text{
+        width: 100%;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .sec2 .box{
+        width: 100%;
+    }
+    .sec2-text .box:nth-of-type(1){
+        border-radius: 8px 8px 0 0;
+        border-left: none;
+        border-bottom:8px solid #794CFF;
+    }
+    .sec2 .sec2-h3{
+        font-size: 18px;
+    }
+    .sec2 .sec2-p{
+        font-size: 15px;
+    }
+    /* sec2 end */
+    .sec3 .sec3-h2{
+        font-size: 18px;
+    }
+    .card{
+        width: 50%;
+        padding-left: 20px;
+    }
+    .card-image{
+        width: 48px;
+    }
+    .sec4 .row{
+        flex-direction: column-reverse;
+    }
+    .sec4 .sec4-text{
+        width: 100%;
+    }
+    .sec4-text .sec4-h2{
+        font-size: 18px;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .sec4-text .sec4-p{
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        line-height: 20px;
+    }
+    .sec4-text .sec4-btn {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .sec4 .sec4-img{
+        width: 90%;
+        padding: 30px 0 0 0;
+    }
+    .sec5-text{
+        text-align: center;
+    }
+    .sec5-text h2{
+        font-size: 18px;
+        width: 60%;
+    }
+    .sec5-text p{
+        font-size: 18px;
+        width: 100%;
+        display: inline;
+    }
+    .sec5 .row{
+        justify-content: center;
+    }
+    .sec5 .row .col-media{
+        display: none;
+    }
+    .sec5 .row .card1-border{
+        border: none;
+    }
+    .sec5-card{
+        display: block;
+        text-align: center;
+    }
+    .sec5 .sec5-li-1{
+        margin: 10px 0;  
+    }
+    .sec5 .sec5-li-2{
+        text-align: center;
+    }
+    .sec6 .row{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+    }
+    .sec6 .sec6-text{
+        width: 100%;
+    }
+    .sec6 .sec6-text h2{
+        width: 100%;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .sec6 .sec6-img{
+        margin: 0 auto;
+    }
+    .sec6 .sec6-img img{
+        width: 25vw;
+        margin: 20px auto;
+    }
+    .sec6 .sec6-img .appstore-img{
+        margin:0  ;
+    }
+    .footer .foot-ul{
+        display: none;
+    }
+    .footer .img-ul{
+        display: block;
+    }
+    .footer .row{
+        display: block;
+    }
+    .footer .row .col{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer .row .col .down-arrow{
+        display: block
+    }
+    .footer .row .appsstore-btn{
+        display: block;
+    }
+    .appsstore-btn .img-ul .footli img{
+        width: 150px;
+    }
+    .footer .row-2 .media-icon{
+        display: none;
+    }
+    .footer .row-2 .col{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:576px) {
+}
+@media only screen and (max-width:550px) {
+    .card-container{
+       display: block;
+   }
+   .card{
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    padding: 0;
+   }
+   .sec3 .card-h3{
+    font-size: 18px;
+    text-align: center;
+   }
+   .sec3 .card-p{
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+   }
+   
+}

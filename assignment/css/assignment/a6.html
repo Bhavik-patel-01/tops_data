@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Animation</title>
+    <style>
+        .wraper{
+            width: 20rem;
+            margin: 200px auto 0 auto;
+            position: relative;
+            border: 2px solid;
+            height: 13rem;
+        }
+        .circle {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            padding: 0.6rem;
+            background-color: #2596be;
+            border-radius: 50%;
+            animation: moveAndGrow 2s infinite linear;
+        }
+
+        @keyframes moveAndGrow {
+            0% {
+                left: 0;
+                transform: translateY(-50%) scale(1);
+            }
+            100% {
+                left: 80%;
+                transform: translateY(-50%) scale(5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+    <div class="circle"></div>
+</div>
+</body>
+</html>

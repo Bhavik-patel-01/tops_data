@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .box {
+            flex: 1 1 300px;
+            padding: 0 20px;
+            color: black;
+            background-color: aqua;
+        }
+
+        .box3 .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box3 button {
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            flex: 1 1 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h2>First article</h2>
+            <p>Tacos alcatra microdosing poutine semiotics actually chicharrones vaporware fanny pack portland everyday
+                carry vinyl typewriter. Tacos PBR&B pork belly venison cornhole poke skateboard whatever dreamcatcher
+                master cleanse biodiesel four loko prism.</p>
+        </div>
+        <div class="box box2">
+            <h2>Second article</h2>
+            <p>Tacos alcatra microdosing poutine semiotics actually chicharrones vaporware fanny pack portland everyday
+                carry vinyl typewriter. Tacos PBR&B pork belly venison cornhole poke skateboard whatever dreamcatcher
+                master cleanse biodiesel four loko prism.</p>
+        </div>
+        <div class="box box3">
+            <h2>Emoticons</h2>
+            <div class="buttons">
+                <button>Smilie</button>
+                <button>Laugh</button>
+                <button>Wink</button>
+                <button>Shrug</button>
+                <button>Blush</button>
+            </div>
+            <p>Tacos alcatra microdosing poutine semiotics actually chicharrones vaporware fanny pack portland everyday
+                carry vinyl typewriter. Tacos PBR&B pork belly venison cornhole poke skateboard whatever dreamcatcher
+                master cleanse biodiesel four loko prism.</p>
+            <p>Crazy food truck brunch XOXO +1 kale chips beard chambray waistcoat ennui. Organic banh mi paleo
+                intelligentsia umami leggings cold-pressed squid chartreuse put a bird on it. Lucite pickled mixtape
+                bushwick heirloom art party.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+
+    <style>
+        /* Basic reset and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 50px;
+            padding: 0 auto;
+            justify-content: center;
+        }
+
+        .card {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card p {
+            padding: 10px;
+            font-size: 16px;
+            text-align: justify;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            /*     gap:0; */
+            padding: 16px;
+        }
+
+        .btn {
+            /*     flex: 1; */
+            padding: 5px 20px;
+            font-size: 1vw;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+
+            .button-container {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            .btn {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+        @media (max-width: 530px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scenic-view-of-waterfall-in-forest-newton-abbot-royalty-free-image-1681937445.jpg?resize=980:*"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scenic-view-of-waterfall-in-forest-newton-abbot-royalty-free-image-1681937445.jpg?resize=980:*"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/scenic-view-of-waterfall-in-forest-newton-abbot-royalty-free-image-1681937445.jpg?resize=980:*"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Card Image">
+                <p>This is a wider card with supporting text below as a natural lead in to additional content.
+                    This content is a little bit longer.</p>
+                <div class="button-container">
+                    <button class="btn">View</button>
+                    <button class="btn">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
