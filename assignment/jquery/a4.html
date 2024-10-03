@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+
+    <div class="main">
+        <img src="https://ts2.mm.bing.net/th?id=OIP.S16MwWFznloeMQVbOE-bugHaEp&pid=15.1" class="img1" alt="nature_img">
+        <img src="https://ts2.mm.bing.net/th?id=OIP.S16MwWFznloeMQVbOE-bugHaEp&pid=15.1" class="img2" alt="nature_img">
+        <img src="https://ts2.mm.bing.net/th?id=OIP.S16MwWFznloeMQVbOE-bugHaEp&pid=15.1" class="img3" alt="nature_img">
+    </div>
+    <button id="btn1">Fade in</button>
+    <button id="btn2">Fade out</button>
+    <button id="btn3">Fade toogle</button>
+    <button id="btn4">FadeTo</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".img1, .img2, .img3").fadeIn(1000)
+            })
+            $("#btn2").click(function(){
+                $(".img1, .img2, .img3").fadeOut("slow")
+            })
+            $("#btn3").click(function(){
+                $(".img1, .img2, .img3").fadeToggle(1000)
+            })
+            $("#btn4").click(function(){
+                $(".img1").fadeTo(1000,1),
+                $(".img2").fadeTo(1000,0.6),
+                $(".img3").fadeTo(1000,0.2)
+            })
+        })
+    </script>
+</body>
+
+</html>
+
+

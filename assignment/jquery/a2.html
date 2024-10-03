@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            background-color: #333333;
+        }
+        .main{
+            padding: 20px;
+            border-radius: 0 0 20px 20px;
+            background-color: #ffcf00;
+            text-align: center;
+            align-content: center;
+            height: 300px;
+            margin-top: 100px;
+        }
+        .btn , .btn1 ,.btn3{
+            border: none;
+            background: #ffcf00;
+            border-radius: 20px;
+            padding:10px 15px;
+            margin-right: 10px;
+        }
+        .btn:hover , .btn1:hover ,.btn3:hover{
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div class="main">
+        <h1>SlideUp / SlideDown / SlideToggle</h1>
+    </div>
+    <br>
+    <button class="btn">slideUp</button>
+    <button class="btn1">slideDown</button>
+    <button class="btn3">slideToggle</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".main").slideUp(1000)
+            })
+            $(".btn1").click(function(){
+                $(".main").slideDown(1000)
+            })
+            $(".btn3").click(function(){
+                $(".main").slideToggle(1000)
+            })
+        })
+    </script>
+    
+</body>
+
+</html>

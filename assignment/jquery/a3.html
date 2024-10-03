@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Password</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Show and Hide Password</h1>
+    <div>
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="togglePassword">Show</button>
+    </div>
+
+    <script>
+        $('#togglePassword').on('click', function() {
+            var passwordField = $('#password');
+            if (passwordField.attr('type') === 'password') {
+                passwordField.attr('type', 'text');
+                $(this).text('Hide');
+            } else {
+                passwordField.attr('type', 'password');
+                $(this).text('Show');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .main{
+            height:10rem;
+            width: 5rem;
+            text-align: center;
+            align-content: center;
+            color: white;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .wraper{
+            max-width: fit-content;   
+            border-radius: 15px;     
+            display: flex;
+            gap: 20px;
+            padding: 100px 30px;
+            margin: 100px auto;
+            justify-content: center;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Click on box to change background color</h1>
+    <div class="wraper">
+    <div class="main one" style="background: orangered;">Box 1</div>
+    <div class="main two" style="background: lightblue;">Box 2</div>
+    <div class="main three" style="background: lightgreen;">Box 3</div>
+    <div class="main four" style="background: yellow">Box 4</div>
+    <div class="main five" style="background: saddlebrown;">Box 5</div>
+    <div class="main six" style="background: blueviolet;">Box 6</div>
+    </div>
+
+    <script>
+        // $(document).ready(function() {
+        //     $('.one').click(function() {
+        //         $('body').css('background', 'orangered');
+        //     });
+        //     $('.two').click(function() {
+        //         $('body').css('background', 'lightblue');
+        //     });
+        //     $('.three').click(function() {
+        //         $('body').css('background', 'lightgreen');
+        //     });
+        //     $('.four').click(function() {
+        //         $('body').css('background', 'yellow');
+        //     });
+        //     $('.five').click(function() {
+        //         $('body').css('background', 'saddlebrown');
+        //     });
+        //     $('.six').click(function() {
+        //         $('body').css('background', 'blueviolet');
+        //     });
+        // });
+        $(document).ready(function() {
+            $('.main').click(function() {
+                var bgColor = $(this).css('background-color');
+                $('body').css('background', bgColor);
+            });
+        });
+    </script>
+</body>
+</html>
