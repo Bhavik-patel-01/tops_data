@@ -1,0 +1,168 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin 01",
+      "email": "admin@gmail.com",
+      "phone": 8844842593,
+      "password": 123
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user@gmail.com",
+      "phone": "9856462546",
+      "password": "123",
+      "img": "https://images.pexels.com/photos/8960029/pexels-photo-8960029.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "phone": "9856469946",
+      "password": 12345,
+      "img": "https://images.pexels.com/photos/9604304/pexels-photo-9604304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "phone": "9856462466",
+      "password": 1345,
+      "img": "https://images.pexels.com/photos/15070232/pexels-photo-15070232/free-photo-of-boy-in-checkered-suit-posing-outdoors.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "status": "unblock"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "image": "https://images.pexels.com/photos/17219738/pexels-photo-17219738/free-photo-of-a-bed-with-a-blue-blanket-and-wooden-headboard.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "category": "economy",
+      "title": "Economy Room 1",
+      "description": "A basic room offering essential amenities at an affordable price.",
+      "guest": "2",
+      "sqft": "22",
+      "price": "20"
+    },
+    {
+      "id": "2",
+      "image": "https://images.pexels.com/photos/17219740/pexels-photo-17219740/free-photo-of-a-bed-with-a-wooden-headboard-and-footboard.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "category": "economy",
+      "title": "Economy Room 2",
+      "description": "Affordable room with standard facilities. ",
+      "guest": "2",
+      "sqft": "22",
+      "price": "20"
+    },
+    {
+      "id": "3",
+      "image": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "luxury",
+      "title": "Luxury Room 1",
+      "description": "A luxurious room with top-notch amenities and beautiful decor.",
+      "guest": "3",
+      "sqft": "22",
+      "price": 40
+    },
+    {
+      "id": "4",
+      "image": "https://images.pexels.com/photos/19045889/pexels-photo-19045889/free-photo-of-bed-in-hotel.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "category": "luxury",
+      "title": "Luxury Room 2",
+      "description": "A luxury room with a king-sized bed and elegant design.",
+      "guest": "4",
+      "sqft": "22",
+      "price": 40
+    },
+    {
+      "id": "5",
+      "image": "https://images.pexels.com/photos/24807130/pexels-photo-24807130/free-photo-of-interior-design-of-hotel-room.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "category": "deluxe",
+      "title": "Deluxe Room 1",
+      "description": "A deluxe room offering exceptional services and a modern design.",
+      "guest": "3",
+      "sqft": "22",
+      "price": 50
+    },
+    {
+      "id": "6",
+      "image": "https://images.pexels.com/photos/28464723/pexels-photo-28464723/free-photo-of-luxurious-villa-bedroom-with-scenic-view.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      "category": "deluxe",
+      "title": "Deluxe Room 2",
+      "description": "Elegant deluxe room with premium features and stunning views.",
+      "guest": "3",
+      "sqft": "22",
+      "price": 50
+    },
+    {
+      "id": "7",
+      "image": "https://images.pexels.com/photos/68389/pexels-photo-68389.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "royal",
+      "title": "Royal Room 1",
+      "description": "Luxurious room with a king-sized bed, panoramic views, and premium amenities.",
+      "guest": "4",
+      "sqft": "22",
+      "price": 60
+    },
+    {
+      "id": "8",
+      "image": "https://images.pexels.com/photos/18285944/pexels-photo-18285944/free-photo-of-luxurious-bedroom-with-wide-bed.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "royal",
+      "title": "Royal Room 2",
+      "description": "Elegant room with a king-sized bed,premium amenities, Jacuzzi, and stunning views.",
+      "guest": "5",
+      "sqft": "22",
+      "price": 70
+    }
+  ],
+  "booking": [
+    {
+      "id": "1742236753200",
+      "arrival_date": "2025-03-09",
+      "departure_date": "2025-03-10",
+      "room": "1room",
+      "guest": "3",
+      "email": "user@gmail.com",
+      "description": "wx",
+      "title": "Royal Room 1",
+      "price": 60
+    },
+    {
+      "id": "1742236753199",
+      "arrival_date": "2025-03-07",
+      "departure_date": "2025-03-08",
+      "room": "2room",
+      "guest": "3",
+      "email": "user@gmail.com",
+      "description": "wx",
+      "title": "Royal Room 2",
+      "price": 70
+    },
+    {
+      "id": "1742244942764",
+      "arrival_date": "",
+      "departure_date": "",
+      "room": "2room",
+      "guest": "2",
+      "email": "user3@gmail.com",
+      "description": "we",
+      "title": "Royal Room 2",
+      "price": 70
+    },
+    {
+      "id": "1742245122720",
+      "arrival_date": "2025-03-08",
+      "departure_date": "2025-03-19",
+      "room": "1room",
+      "guest": "1",
+      "email": "user3@gmail.com",
+      "description": "dfb",
+      "title": "Royal Room 2",
+      "price": 70
+    }
+  ]
+}
