@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Enter area">
+    
+    <button onclick="arc()">Calculate circumference</button>
+    <h1 id="h"></h1>
+
+    <script>
+        function arc() {
+            var num1 = document.getElementById("num1").value;
+           
+            var sum = 4 * parseFloat(num1);
+            document.getElementById("h").innerText = "circumference: " + sum;
+        }
+
+</body>
+</html>

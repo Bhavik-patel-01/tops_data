@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Day and Time</title>
+</head>
+<body>
+    <h1>Current Day and Time</h1>
+    <p id="time"></p>
+
+    <script>
+        function displayTime() {
+          
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+       
+            const now = new Date();
+
+            const dayName = days[now.getDay()];
+
+           
+            let hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+
+           
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+
+            
+            hours = hours % 12;
+     
+            const timeString = `Today is ${dayName}.<br>Current Time is ${hours} ${ampm} : ${minutes < 10 ? '0' + minutes : minutes} : ${seconds < 10 ? '0' + seconds : seconds}`;
+
+    
+            document.getElementById('time').innerHTML = timeString;
+        }
+
+       
+        displayTime();
+    </script>
+</body>
+</html>

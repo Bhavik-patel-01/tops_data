@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areObjectsEqual(obj1, obj2) {
+
+    return JSON.stringify(obj1) === JSON.stringify(obj2);
+}
+
+
+const objA = { name: "Alice", age: 25 };
+const objB = { name: "Alice", age: 25 };
+const objC = { name: "Alice", age: 26 };
+
+console.log(areObjectsEqual(objA, objB)); 
+console.log(areObjectsEqual(objA, objC)); 
+
+    </script>
+</body>
+</html>

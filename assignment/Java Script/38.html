@@ -1,0 +1,29 @@
+
+
+
+
+THEORY QUESTION
+
+
+
+
+Declaring methods directly in JavaScript objects, often referred to as "object literals," can have several drawbacks:
+
+1. Inefficient Memory Usage
+Every time an object is created, the method is also recreated and stored in memory. This can lead to increased memory
+consumption, especially when many instances of the object are created.
+2. Lack of Inheritance
+Methods declared directly in objects do not benefit from JavaScript's prototypal inheritance. This makes it harder to
+share common behavior across multiple objects without duplicating code.
+3. No Access to this in Arrow Functions
+If you declare methods using arrow functions within object literals, the this keyword does not refer to the object
+itself but instead inherits the this value from the surrounding context. This can lead to unexpected behavior.
+4. Difficulty in Testing and Reusability
+Methods declared within objects are not easily reusable outside the context of that object. This can make unit testing
+and code reuse more challenging.
+5. Inconsistent Method Binding
+Methods declared directly within an object may need explicit binding (using .bind(), for example) if passed as
+callbacks. Otherwise, the context (this) might be lost.
+6. Code Duplication
+When using object literals, if you need the same method in multiple objects, you'll have to duplicate the method across
+these objects, leading to redundancy and potential maintenance challenges.

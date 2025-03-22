@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date</title>
+</head>
+<body>
+    <h1>Current Date</h1>
+    <p id="currentDate"></p>
+
+    <script>
+       
+        const now = new Date();
+
+       
+        const day = now.getDate();
+        const month = now.getMonth() + 1; 
+        const year = now.getFullYear();
+
+        
+        const formattedDate = day + "/" + month + "/" + year;
+
+       
+        document.getElementById('currentDate').innerText = "Today's date is: " + formattedDate;
+    </script>
+</body>
+</html>

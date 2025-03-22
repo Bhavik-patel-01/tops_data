@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Checker</title>
+</head>
+<body>
+    <input type="text" id="vowel" placeholder="Enter a letter">
+    <button onclick="checkVowel()">Check</button>
+    <h1 id="h1"></h1>
+
+    <script>
+        function checkVowel() {
+            var vowel = document.getElementById("vowel").value;
+
+            if (vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u" ||
+                vowel == "A" || vowel == "E" || vowel == "I" || vowel == "O" || vowel == "U") {
+                document.getElementById("h1").innerText = "It is a vowel";
+            } else {
+                document.getElementById("h1").innerText = "It is a consonant";
+            }
+        }
+    </script>
+</body>
+</html>

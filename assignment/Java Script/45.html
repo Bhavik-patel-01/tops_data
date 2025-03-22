@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+</head>
+<body>
+    <h1>Marksheet</h1>
+    <center><h1>Marks</h1></center>
+    <table>
+        <tr>
+            <td>1. C Language</td>
+            <td><input type="number" id="one"></td>
+        </tr>
+        <tr>
+            <td>2. C++</td>
+            <td><input type="number" id="two"></td>
+        </tr>
+        <tr>
+            <td>3. DBMS</td>
+            <td><input type="number" id="three"></td>
+        </tr>
+        <tr>
+            <td>4. C#</td>
+            <td><input type="number" id="four"></td>
+        </tr>
+        <tr>
+            <td>5. Node.js</td>
+            <td><input type="number" id="five"></td>
+        </tr>
+        <tr>
+            <td>6. React</td>
+            <td><input type="number" id="six"></td>
+        </tr>
+        <tr>
+            <td>7. Bootstrap</td>
+            <td><input type="number" id="seven"></td>
+        </tr>
+    </table>
+    <button onclick="result()">Result</button>
+    <p>Total: <span id="total"></span></p>
+    <p>Percentage: <span id="percentage"></span>%</p>
+
+    <script>
+        function result() {
+            var one = parseFloat(document.getElementById("one").value)
+            var two = parseFloat(document.getElementById("two").value) 
+            var three = parseFloat(document.getElementById("three").value) 
+            var four = parseFloat(document.getElementById("four").value) 
+            var five = parseFloat(document.getElementById("five").value)
+            var six = parseFloat(document.getElementById("six").value) 
+            var seven = parseFloat(document.getElementById("seven").value) 
+
+            var sum = one + two + three + four + five + six + seven;
+            document.getElementById("total").innerText = sum;
+
+            var percentage = (sum / 7);
+            document.getElementById("percentage").innerText = percentage;
+        }
+    </script>
+</body>
+</html>

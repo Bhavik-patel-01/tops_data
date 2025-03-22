@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="days">
+    <input type="number" id="years">
+    <button onclick="a()">click</button>
+    <h1 id="h1"></h1>
+    <h2 id="h2"></h2>
+    <script>
+        function a() {
+            var days = document.getElementById("days").value;
+            var years = document.getElementById("years").value;
+            var day = 365 * parseInt(years);
+            document.getElementById("h1").innerText = day
+
+            var year = parseInt(days) / 12;
+            document.getElementById("h2").innerText = year
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <script>
+        
+        function isPalindrome(num) {
+            var originalNum = num;
+            var rev = 0;
+            var temp;
+
+            while (num != 0) {
+                temp = num % 10;        
+                rev = rev * 10 + temp;  
+                              num = Math.floor(num / 10); 
+            }
+
+            return originalNum == rev;
+        }
+
+        function checkPalindromes() {
+            var count = 0;
+            var num;
+            var result = '';
+
+            while (count < 3) {
+                num = parseInt(prompt("Enter a number:")); 
+                if (isNaN(num)) {
+                    result += "Invalid input. Please enter a valid number.<br>";
+                } else {
+                    if (isPalindrome(num)) {
+                        result += num + " is a palindrome.<br>";
+                    } else {
+                        result += num + " is not a palindrome.<br>";
+                    }
+                    count++;
+                }
+            }
+
+            document.write(result); 
+        }
+
+        checkPalindromes();
+        </script>
+</body>
+</html>
