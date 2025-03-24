@@ -1,0 +1,134 @@
+.header {
+    background-color: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header .nav-link {
+    color: white;
+}
+
+.header .nav-link:hover {
+    text-decoration: underline;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header p {
+    margin-top: 10px;
+}
+
+.header input {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.header button {
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: white;
+    color: #ff5722;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-weight: bold;
+}
+
+
+.portfolio-section,
+.pricing-section,
+.contact-section {
+    padding: 60px 0;
+}
+
+.portfolio-section h2,
+.pricing-section h2,
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portfolio-section p,
+.pricing-section p,
+.contact-section p {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+.portfolio-item,
+.pricing-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.portfolio-item img,
+.pricing-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item .content,
+.pricing-item .content {
+    padding: 20px;
+}
+
+.pricing-item .header {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 20px;
+}
+
+.pricing-item .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.pricing-item .btn {
+    background-color: #ff5722;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contact-section .contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-section .contact-info p {
+    color: #6c757d;
+}
+
+.contact-section .contact-info i {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure JS Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        .slider-container {
+            width: 70%;
+            margin: auto;
+            position: relative;
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .slider-for img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slider-for img.active {
+            display: block;
+        }
+        .slider-nav-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .slider-nav {
+            display: flex;
+            overflow-x: auto;
+            width: 90%;
+            scroll-behavior: smooth;
+            justify-content: center;
+            scrollbar-width: none;
+        }
+        .slider-nav img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+        .slider-nav img.active {
+            border-color: white;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+        }
+        .prev-nav {
+            left: 0;
+        }
+        .next-nav {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slider click on thumbnail img</h1>
+    <div class="slider-container">
+        <!-- Main slider container -->
+        <div class="slider-for" id="sliderFor"></div>
+        <div class="slider-nav-container">
+            <!-- Navigation arrows -->
+            <span class="arrow prev-nav" id="prevNav">&#10094;</span>
+            <div class="slider-nav" id="sliderNav"></div>
+            <span class="arrow next-nav" id="nextNav">&#10095;</span>
+        </div>
+    </div>
+
+    <script>
+        // Array of images for the slider
+        const images = [
+            "./img/img1.jpeg",
+            "./img/img2.jpeg",
+            "./img/img3.jpeg",
+            "./img/img4.jpeg",
+            "./img/img5.jpeg",
+            "./img/img6.jpeg",
+            "./img/img7.jpeg",
+            "./img/img8.jpeg"
+        ];
+        
+        const sliderFor = document.getElementById("sliderFor");
+        const sliderNav = document.getElementById("sliderNav");
+        let currentIndex = 0;
+
+        // Function to create slider elements dynamically
+        function createSliderElements() {
+            images.forEach((src, index) => {
+                // Creating main slider image
+                const imgFor = document.createElement("img");
+                imgFor.src = src;
+                if (index === 0) imgFor.classList.add("active");
+                sliderFor.appendChild(imgFor);
+                
+                // Creating thumbnail images
+                const imgNav = document.createElement("img");
+                imgNav.src = src;
+                if (index === 0) imgNav.classList.add("active");
+                imgNav.addEventListener("click", () => setActiveImage(index));
+                sliderNav.appendChild(imgNav);
+            });
+        }
+        
+        // Function to update the active image in the slider
+        function setActiveImage(index) {
+            const mainImages = document.querySelectorAll(".slider-for img");
+            const navImages = document.querySelectorAll(".slider-nav img");
+            
+            mainImages.forEach(img => img.classList.remove("active"));
+            navImages.forEach(img => img.classList.remove("active"));
+            
+            mainImages[index].classList.add("active");
+            navImages[index].classList.add("active");
+            
+            currentIndex = index;
+        }
+
+        // Function to handle previous and next navigation with looping
+        function scrollThumbnails(direction) {
+            const navImages = document.querySelectorAll(".slider-nav img");
+            
+            if (direction === "next") {
+                currentIndex = (currentIndex + 1) % images.length; // Loops to first when reaching last
+            } else if (direction === "prev") {
+                currentIndex = (currentIndex - 1 + images.length) % images.length; // Loops to last when reaching first
+            }
+
+            setActiveImage(currentIndex);
+            navImages[currentIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+        }
+
+        // Adding event listeners to navigation buttons
+        document.getElementById("nextNav").addEventListener("click", () => scrollThumbnails("next"));
+        document.getElementById("prevNav").addEventListener("click", () => scrollThumbnails("prev"));
+
+        // Initialize slider elements
+        createSliderElements();
+    </script>
+</body>
+</html>
